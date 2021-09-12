@@ -15,8 +15,11 @@ final: str = ""
 if maximum <= 0:
     print("No beat...")
 else:
-    while counter < maximum:
-        final = final + beat + " "
-        counter = counter + 1
+    if counter == maximum:
+        final = final + beat
+    else: 
+        while counter < maximum:
+            final = final + beat + " "
+            counter = counter + 1
 
 print(final)
