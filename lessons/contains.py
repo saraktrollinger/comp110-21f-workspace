@@ -15,5 +15,6 @@ def contains(needle: str, haystack: list[str]) -> bool:
         i += 1
     return False
 
-    if __name__ == "__main__":
-        main()
+
+if __name__ == "__main__":
+    main()
