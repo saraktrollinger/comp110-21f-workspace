@@ -37,3 +37,4 @@ def max(input: list[int]) -> int:
             largest = input[i]
             i += 1
     print(largest)
+    return largest
