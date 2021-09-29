@@ -9,11 +9,12 @@ __author__ = "730393060"
 def all(user: int, xs: list[int]) -> bool:
     """Return True if all ints in list are same, False otherwise."""
     i: int = 0
+    result: bool = True
     while i < len(xs):
         if user != xs[i]:
-            return False
+            result = False
         i += 1
-    return True
+    return result
 
 
 def is_equal(one: list[int], two: list[int]) -> bool:
