@@ -23,12 +23,12 @@ def sub(initial: list[int], start: int, end: int) -> list[int]:
         if i == len(initial):
             return new_list
         else:
-            if i < 0:
+            if start < 0:
                 i = initial[0]
                 new_list.append(i)
             else:
                 new_list.append(i)
-            i += 1
+        i += 1
     return new_list
 
 
